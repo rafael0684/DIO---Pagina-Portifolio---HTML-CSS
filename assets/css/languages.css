@@ -1,0 +1,24 @@
+
+.languages{
+  margin:1em;
+  padding:0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  justify-content:space-between;
+  align-items:center;
+  
+  list-style: none;
+  
+}
+.content .languages li::before{
+  font-size:.5em;
+  position:relative;
+  top: 2px;
+  margin-right: .5rem;
+  display:inline-block;
+  content:' ';
+  width:16px;
+  height:16px;
+  background-size: contain;
+  background-image: url('../img/icons/icons8-double-tick-30.png')
+}

@@ -1,0 +1,66 @@
+.skills{
+  display:block;
+}
+.pessoais ul{
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+    align-items: left;
+    list-style: none;
+  }
+.habil-itens {
+    font-size: small;
+    padding: 0.5em;
+    margin-top: 1em;
+    text-align: left;
+}
+.profissionais, .pessoais{
+  text-align: center;
+  display:grid;
+  grid-template-rows: 1fr 5fr;
+  justify-content: center;
+  align-items: center;
+}
+.skills .title{
+  margin-top:1em;
+}
+.skills-logos img{
+  width: 75px;
+  margin:0;
+}
+
+
+.habil-itens::before{
+  content: "- ";
+}
+@media (min-width: 768px){
+  .skills{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1em;
+    margin:1em;
+  }
+  .pessoais ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: left;
+    list-style: none;
+  }
+  .habil-itens {
+    font-size: unset;
+    padding: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
+  .skills .title{
+    margin:0;
+  }
+  .skills-logos img{
+  width: 75px;
+  margin: 1em;
+}
+  .pessoais{
+  margin-top:0;
+}
+}

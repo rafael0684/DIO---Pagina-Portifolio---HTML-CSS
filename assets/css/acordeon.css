@@ -1,0 +1,57 @@
+.acordeon{
+  display:flex;
+  flex-direction: column;
+  
+  margin:1em;
+  border: 1px solid;
+  border-radius: 1em;
+  
+}
+.acordeon::active{
+  background: hsla(239, 30%, 49%, 0.5);
+}
+.content{
+  margin-bottom:.5em;
+  opacity:1;
+  max-height:auto;
+  transition: .5s;
+  
+}
+
+.ocultar{
+  margin-bottom:0;
+  opacity:0;
+  overflow:hidden;
+  max-height:0;
+  transition:0.5s;
+  
+}
+.trigger{
+  font-size: 1.1em;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .9em 1.5em;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  cursor:pointer;
+}
+.acordeon:hover{
+  border-radius:1em;
+  cursor:pointer;
+  background: hsla(239, 30%, 49%, 0.5);
+  border-color:#55569E;
+  background-repeat: no-repeat;
+  color: white;
+}
+.trigger img{
+  width: 24px;
+  height:24px;
+  transition:0.5s;
+}
+.rodar{
+  transform: rotate(180deg);
+  transition:0.5s
+}
+

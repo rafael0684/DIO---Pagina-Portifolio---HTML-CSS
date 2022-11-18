@@ -1,0 +1,40 @@
+
+@font-face {
+  font-family: 'Reue Machida';
+  src: url('../fonts/NeueMachina-Light.otf');
+}
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+body{
+  background: rgb(63,94,251);
+  background: linear-gradient(141deg, rgba(63,94,251,1) 0%, rgba(66,25,54,1) 28%, rgba(0,0,0,1) 49%, rgba(66,25,54,1) 66%, rgba(63,94,251,1) 99%);
+  background-repeat: no-repeat;
+  color: white;
+  
+}
+.main{
+  border:1px solid;
+  margin:1em;
+  border-radius: 1em;
+  padding:1em;
+}
+@media (min-width:1024px){
+  .main{
+    margin: 2em 20%;
+  }
+}
+a{
+  color:white;
+  text-decoration:none;
+}
+a:hover{
+  text-decoration: underline;
+}
+ul{
+  padding:0;
+  margin:0;
+}

@@ -1,0 +1,71 @@
+
+.header{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  position: relative;
+  margin-bottom:2em;
+}
+.header-top{
+  position: absolute;
+  right: 1em;
+  font-size: 2em;
+  top: 0;
+}
+.header h1{
+  font-family: 'Reue Machida';
+  text-align: center;
+}
+.header img{
+  width:200px;
+  height: 200px;
+  border-radius:50%;
+  
+}
+.informations{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width:100%
+  
+}
+.informations p{
+  margin:.5rem;
+}
+.informations p::before {
+  position:relative;
+  top: 6px;
+  margin-right: 1em;
+  display:inline-block;
+  content:' ';
+  width:24px;
+  height:24px;
+  background-size: contain;
+}
+.informations a{
+  color:white;
+  text-decoration:none;
+}
+.informations a:hover{
+  text-decoration: underline;
+}
+
+.informations .job::before{
+  background-image: url('../img/icons/icons8-github-30.png');
+}
+.informations .location::before{
+  background-image: url('../img/icons/icons8-location.png');
+}
+.informations .mobile::before{
+  background-image: url('../img/icons/icons8-whatsapp.png');
+}
+.informations .email::before{
+  background-image: url('../img/icons/icons8-envelope.png');
+}
+
+@media (min-width: 768px){
+  .header{ 
+    flex-direction:row;
+    justify-content: space-around;
+  }
+}

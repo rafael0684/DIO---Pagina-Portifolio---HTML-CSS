@@ -1,0 +1,27 @@
+.experiencia{
+  padding:0;
+  margin:1em;
+  display:flex;
+  flex-direction:column;
+  gap:2em;
+  list-style: none;
+  
+}
+.content .experiencia li span::before{
+  font-size:.9em;
+  position:relative;
+  top:6px;
+  margin-right: .5rem;
+  display:inline-block;
+  content:' ';
+  width:24px;
+  height:24px;
+  background-size: contain;
+  
+}
+.experiencia .datas{
+  font-size:small;
+}
+.experiencia .description{
+  margin: 1em;
+}
